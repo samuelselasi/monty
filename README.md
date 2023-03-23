@@ -1,4 +1,6 @@
 # 0x19. C - Stacks, Queues - LIFO, FIFO
+![CFYYWy6UEAE9Ow-](https://user-images.githubusercontent.com/85158665/227301679-72c72c13-7437-4fa7-a1f7-1653890ccfb6.png)
+
 ## Resources
 **Read or watch**:
 
