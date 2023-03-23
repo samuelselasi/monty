@@ -211,3 +211,70 @@ julien@ubuntu:~/monty$ ./monty bytecodes/07.m
 1
 julien@ubuntu:~/monty$
 ```
+[3. swap](./functions2.c)
+
+Implement the `swap` opcode.
+
+**The swap opcode**
+
+The opcode `swap` swaps the top two elements of the stack.
+
+* Usage: `swap`
+* If the stack contains less than two elements, print the error message `L<line_number>: can't swap, stack too short`, followed by a new line, and exit with the status `EXIT_FAILURE`
+```
+julien@ubuntu:~/monty$ cat bytecodes/09.m 
+push 1
+push 2
+push 3
+pall
+swap
+pall
+julien@ubuntu:~/monty$ ./monty bytecodes/09.m 
+3
+2
+1
+2
+3
+1
+julien@ubuntu:~/monty$
+```
+[4. add](./operators.c)
+
+Implement the `add` opcode.
+
+**The add opcode**
+
+The opcode `add` adds the top two elements of the stack.
+
+* Usage: `add`
+* If the stack contains less than two elements, print the error message `L<line_number>: can't add, stack too short`, followed by a new line, and exit with the status `EXIT_FAILURE`
+* The result is stored in the second top element of the stack, and the top element is removed, so that at the end:
+	* The top element of the stack contains the result
+	* The stack is one element shorter
+```
+julien@ubuntu:~/monty$ cat bytecodes/12.m 
+push 1
+push 2
+push 3
+pall
+add
+pall
+
+julien@ubuntu:~/monty$ ./monty bytecodes/12.m 
+3
+2
+1
+5
+1
+julien@ubuntu:~/monty$
+```
+[5. nop](./functions1.c)
+
+Implement the `nop` opcode.
+
+**The nop opcode**
+
+The opcode `nop` doesn’t do anything.
+
+* Usage: `nop`
+
