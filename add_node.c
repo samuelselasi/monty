@@ -7,6 +7,7 @@
 *
 * Return: none
 */
+
 void addnode(stack_t **head, int n)
 {
 	stack_t *new_node, *temp;
