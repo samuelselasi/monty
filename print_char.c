@@ -1,13 +1,13 @@
 #include "monty.h"
 
 /**
-* f_pchar - function that prints the char at the top of the stack,
-* followed by a new line
-* @head: stack head
-* @counter: line count
-*
-* Return: nothing
-*/
+ * f_pchar - print the char at the top of stack
+ * @head: stack head
+ * @counter: line counter
+ *
+ * Return: none
+ */
+
 void f_pchar(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
