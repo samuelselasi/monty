@@ -1,12 +1,13 @@
 #include "monty.h"
 
 /**
-* f_pall - function that prints everything in the stack
-* @head: double head pointer to the stack
-* @counter: unused line count
+* f_pall - print everything in stack
+* @head: pointer to pointer of first node
+* @counter: line counter (not used)
 *
-* Return: nothing
+* Return: none
 */
+
 void f_pall(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
@@ -15,6 +16,7 @@ void f_pall(stack_t **head, unsigned int counter)
 	h = *head;
 	if (h == NULL)
 		return;
+
 	while (h)
 	{
 		printf("%d\n", h->n);
@@ -23,12 +25,13 @@ void f_pall(stack_t **head, unsigned int counter)
 }
 
 /**
-* f_swap - function that swaps the top two elements of the stack
-* @head: head of stack
-* @counter: line count
+* f_swap - swap first two elements of stack
+* @head: first node
+* @counter: line counter
 *
-* Return: nothing
+* Return: none
 */
+
 void f_swap(stack_t **head, unsigned int counter)
 {
 	stack_t *h;
